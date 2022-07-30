@@ -1,1 +1,1 @@
-require('lua.juscuzryancan.init')
+require("juscuzryancan")
