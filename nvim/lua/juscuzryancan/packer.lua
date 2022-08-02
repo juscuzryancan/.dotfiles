@@ -6,8 +6,7 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  --random dependencies
-  use 'nvim-lua/plenary.nvim'
+  use 'dstein64/vim-startuptime'
 
   --color schemes
   use 'folke/tokyonight.nvim'
@@ -39,8 +38,10 @@ return require('packer').startup(function()
   --lsp
   use 'neovim/nvim-lspconfig'
 
-  --airline
-  use 'vim-airline/vim-airline' 
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   --git-gutter
   use 'airblade/vim-gitgutter'
