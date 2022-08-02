@@ -17,6 +17,10 @@ return require('packer').startup(function()
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  --cmplete
+  use 'hrsh7th/nvim-cmp'
+
+
   --toggle term to open up new terminal windows in the nvim window
   use {"akinsho/toggleterm.nvim", tag = 'v2.*', config = function()
     require("toggleterm").setup()
