@@ -22,7 +22,8 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
-
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
 
   --toggle term to open up new terminal windows in the nvim window
   use {"akinsho/toggleterm.nvim", tag = 'v2.*', config = function()
