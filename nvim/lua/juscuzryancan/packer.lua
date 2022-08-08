@@ -19,6 +19,9 @@ return require('packer').startup(function()
 
   --cmplete
   use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
 
 
   --toggle term to open up new terminal windows in the nvim window
