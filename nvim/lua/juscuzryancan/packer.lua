@@ -59,4 +59,12 @@ return require('packer').startup(function()
 
   --surroudn
   use 'tpope/vim-surround'
+
+  --treesomething
+  use { 
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons'
+    }
+  }
 end)
