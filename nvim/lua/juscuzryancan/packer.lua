@@ -17,6 +17,13 @@ return require('packer').startup(function()
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
+
+  use "windwp/nvim-ts-autotag"
+
   --cmplete
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -59,6 +66,10 @@ return require('packer').startup(function()
 
   --surroudn
   use 'tpope/vim-surround'
+
+  use {
+    'nvim-treesitter/nvim-treesitter',
+  run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,}
 
   --treesomething
   use { 
