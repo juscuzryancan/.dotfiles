@@ -17,12 +17,10 @@ return require('packer').startup(function()
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use {
-    "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-  }
-
+  use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
+
+  use "ThePrimeagen/vim-be-good"
 
   --cmplete
   use 'hrsh7th/nvim-cmp'
